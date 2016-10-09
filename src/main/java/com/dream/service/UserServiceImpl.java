@@ -10,6 +10,8 @@ import com.dream.utils.BeanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
@@ -21,5 +23,12 @@ public class UserServiceImpl implements UserService {
         if (user == null) throw new BusinessException(EnumUserError.不存在此用户.toString());
         UserObject userObject = BeanMapper.map(user, UserObject.class);
         return userObject;
+    }
+
+    @Override
+    public List<UserObject> findAll() {
+        List<User> userList = userRepository.findAll();
+        List<UserObject> userObjectList = BeanMapper.mapList(userList, UserObject.class);
+        return userObjectList;
     }
 }

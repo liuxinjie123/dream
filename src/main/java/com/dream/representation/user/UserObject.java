@@ -1,5 +1,6 @@
 package com.dream.representation.user;
 
+import com.dream.representation.common.BaseObject;
 import com.dream.representation.user.validated.CreateUser;
 import com.dream.representation.user.validated.UpdateUser;
 import lombok.Data;
@@ -13,7 +14,7 @@ import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
-public class UserObject implements Serializable {
+public class UserObject extends BaseObject implements Serializable {
     private Long id;
 
     @Size(min = 2, max = 20, message = "用户登录名应该在 {min} - {max} 个字符之间", groups = {CreateUser.class})
