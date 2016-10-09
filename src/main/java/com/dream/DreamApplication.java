@@ -10,10 +10,10 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @Slf4j
-public class DemoApplication {
+public class DreamApplication {
 
 	public static void main(String[] args) throws UnknownHostException {
-		SpringApplication app = new SpringApplication(DemoApplication.class);
+		SpringApplication app = new SpringApplication(DreamApplication.class);
 		Environment env = app.run(args).getEnvironment();
 		log.info("Access URLs:\n----------------------------------------------------------\n\t" +
 						"Local: \t\thttp://127.0.0.1:{}\n\t" +
