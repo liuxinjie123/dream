@@ -15,13 +15,11 @@ import java.util.List;
 @Configuration
 public class MVCConfig extends WebMvcConfigurerAdapter {
 
-    //添加信息转换器
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(new StringHttpMessageConverter(Charset.forName("UTF-8")));
     }
 
-    //JSR-303
     @Bean(name = "validator")
     public Validator createBeanValidator() {
         return new LocalValidatorFactoryBean();
