@@ -1,4 +1,4 @@
-package com.dream.entity;
+package com.dream.entity.user;
 
 import com.dream.entity.common.BaseEntity;
 import lombok.Data;

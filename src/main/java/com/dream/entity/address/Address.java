@@ -1,4 +1,4 @@
-package com.dream.entity;
+package com.dream.entity.address;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,6 @@
 package com.dream.controller;
 
-import com.dream.entity.User;
+import com.dream.entity.user.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
