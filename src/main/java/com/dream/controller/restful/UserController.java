@@ -1,4 +1,4 @@
-package com.dream.controller;
+package com.dream.controller.restful;
 
 import com.dream.api.UserService;
 import com.dream.representation.common.result.Result;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController("userController")
 public class UserController {
     @Autowired
     private UserService userService;
