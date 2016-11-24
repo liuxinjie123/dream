@@ -1,4 +1,4 @@
-package com.dream.service;
+package com.dream.service.user;
 
 import com.dream.api.UserService;
 import com.dream.entity.user.User;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
