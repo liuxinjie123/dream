@@ -31,7 +31,7 @@ public class BeanMapper {
     /**
      * 基于Dozer转换Collection中对象的类型.
      */
-    public static <S, D> List<D> mapList(Iterable<S> sourceList, Class<D> destinationClass) {
+    public static <S, D> List<D> map(Iterable<S> sourceList, Class<D> destinationClass) {
         return mapper.mapAsList(sourceList, destinationClass);
     }
 

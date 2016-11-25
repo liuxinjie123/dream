@@ -1,4 +1,4 @@
-package com.dream.api;
+package com.dream.api.user;
 
 import com.dream.representation.user.UserObject;
 

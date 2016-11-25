@@ -1,9 +1,9 @@
 package com.dream.service.user;
 
-import com.dream.api.UserService;
+import com.dream.api.user.UserService;
 import com.dream.entity.user.User;
 import com.dream.exception.BusinessException;
-import com.dream.repository.UserRepository;
+import com.dream.repository.user.UserRepository;
 import com.dream.representation.user.EnumUserError;
 import com.dream.representation.user.UserObject;
 import com.dream.utils.BeanMapper;
@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserObject> findAll() {
         List<User> userList = userRepository.findAll();
-        List<UserObject> userObjectList = BeanMapper.mapList(userList, UserObject.class);
+        List<UserObject> userObjectList = BeanMapper.map(userList, UserObject.class);
         return userObjectList;
     }
 }

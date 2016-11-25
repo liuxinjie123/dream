@@ -1,4 +1,4 @@
-package com.dream.repository;
+package com.dream.repository.user;
 
 
 import com.dream.entity.user.User;
