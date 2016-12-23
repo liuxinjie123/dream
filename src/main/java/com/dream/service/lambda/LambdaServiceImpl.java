@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 @Service("lambdaLambdaServiceImpl")
@@ -67,6 +68,11 @@ public class LambdaServiceImpl {
                 summaryStatistics.getSum());
     }
 
-
-
+    /**
+     * 测试005
+     */
+    public void rangeCreateNum() {
+        IntStream.range(1, 20).mapToLong(i -> i * i)
+                .forEach(System.out::println);
+    }
 }
