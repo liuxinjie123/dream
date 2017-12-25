@@ -4,3 +4,4 @@
 #### 1, 本项目构建工具是 maven.
 #### 2, 根目录下有 initDatabase.sh 可以创建,初始化数据库.
 #### 3, 本项目使用到 SpringBoot, Jpa, MySQL 等技术
+#### 4, 本項目使用到 redis緩存。
