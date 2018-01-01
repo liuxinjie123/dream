@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController("userController")
+@RequestMapping("/api/user")
 public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping(value = "/user")
+    @GetMapping
     public Result helloMethod() {
         return Result.success().setData(userService.findAll());
     }
