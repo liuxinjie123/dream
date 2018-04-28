@@ -18,4 +18,5 @@ public class UserController {
     public Result helloMethod() {
         return Result.success().setData(userService.findAll());
     }
+
 }

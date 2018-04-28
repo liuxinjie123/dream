@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserObject findById(Long id) {
-        User user = userRepository.findOne(id);
+        User user = userRepository.getOne(id);
         if (user == null) throw new BusinessException(EnumUserError.不存在此用户.toString());
         UserObject userObject = BeanMapper.map(user, UserObject.class);
         return userObject;
